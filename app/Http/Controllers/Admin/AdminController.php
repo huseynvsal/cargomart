@@ -13,11 +13,14 @@ use App\Http\Requests\News\NewsRequest;
 use App\Http\Requests\Order\EditOrderRequest;
 use App\Http\Requests\Price\EditPriceRequest;
 use App\Http\Requests\Price\PriceRequest;
+use App\Http\Requests\Question\EditQuestionRequest;
+use App\Http\Requests\Question\QuestionRequest;
 use App\Http\Requests\Store\EditStoreRequest;
 use App\Http\Requests\Store\StoreRequest;
 use App\News\News;
 use App\Orders\Orders;
 use App\Prices\Prices;
+use App\Questions\Questions;
 use App\Stores\Stores;
 use Illuminate\Http\Request;
 
@@ -267,6 +270,37 @@ class AdminController extends Controller
         $edit_orders->status = $request->status;
         $edit_orders->liquid = $request->liquid;
         $edit_orders->save();
+        return response()->json([
+            'status' => true,
+            'message' => 'success'
+        ]);
+    }
+
+    public function add_question(QuestionRequest $request)
+    {
+        $add_question = Questions::create($request->validated());
+        return response()->json([
+            'status' => true,
+            'message' => 'success',
+            'id' => $add_question->id
+        ]);
+    }
+
+    public function delete_question(Request $request)
+    {
+        Questions::destroy($request->id);
+        return response()->json([
+            'status' => true,
+            'message' => 'success'
+        ]);
+    }
+
+    public function edit_question(EditQuestionRequest $request)
+    {
+        $edit_question = Questions::find($request->id);
+        $edit_question->question = $request->new_question;
+        $edit_question->answer = $request->new_answer;
+        $edit_question->save();
         return response()->json([
             'status' => true,
             'message' => 'success'

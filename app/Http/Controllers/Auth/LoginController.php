@@ -27,7 +27,6 @@ class LoginController extends Controller
      *
      * @var string
      */
-
     protected function redirectTo(){
         if (Auth::user()->category == 'admin'){
             return '/admin';

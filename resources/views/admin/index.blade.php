@@ -166,6 +166,12 @@
                             <span class="hide-menu">Haqqımızda</span>
                         </a>
                     </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/question" aria-expanded="false">
+                            <i class="mdi mdi-border-none"></i>
+                            <span class="hide-menu">Suallar cədvəli</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <!-- End Sidebar navigation -->
@@ -213,6 +219,7 @@
 <script src="{{asset('/js/news.js')}}"></script>
 <script src="{{asset('/js/orders.js')}}"></script>
 <script src="{{asset('/js/about.js')}}"></script>
+<script src="{{asset('/js/question.js')}}"></script>
 <script>
     var csrf_token = "{{ csrf_token() }}";
 </script>

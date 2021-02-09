@@ -7,6 +7,7 @@ use App\News\News;
 use App\Users\Users;
 use App\Orders\Orders;
 use App\About\About;
+use App\Questions\Questions;
 use App\Http\Controllers\Admin\AdminController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Main\MainController;
@@ -37,14 +38,6 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/register', function () {
-    return view('main.register');
-});
-
-Route::get('/login', function () {
-    return view('main.login');
-});
-
 Route::get('/about', function () {
     $about = About::find(1);
     return view('main.about',[
@@ -72,6 +65,13 @@ Route::get('/admin', function () {
     return view('admin.table',[
         'prices' => $prices,
         'countries' => $countries
+    ]);
+})->middleware('admin');
+
+Route::get('/question', function () {
+    $questions = Questions::all();
+    return view('admin.questions',[
+        'questions' => $questions
     ]);
 })->middleware('admin');
 
@@ -141,8 +141,6 @@ Route::get('/currency', function () {
     dd($currency['ValType'][1]['Valute']);
 });
 
-Auth::routes();
-
 Route::post('/add_price',[AdminController::class, 'add_price'])->name( 'add_price')->middleware('admin');
 Route::post('/edit_price',[AdminController::class, 'edit_price'])->name( 'edit_price')->middleware('admin');
 Route::post('/delete_price',[AdminController::class, 'delete_price'])->name( 'delete_price')->middleware('admin');
@@ -163,8 +161,15 @@ Route::post('/add_order',[MainController::class, 'add_order'])->name( 'add_order
 Route::post('/edit_order',[AdminController::class, 'edit_order'])->name( 'edit_order')->middleware('admin');
 Route::post('/delete_order',[AdminController::class, 'delete_order'])->name( 'delete_order')->middleware('admin');
 
-Route::post('/add_user',[MainController::class, 'add_user'])->name( 'add_user')->middleware('auth');
+Route::post('/add_user',[MainController::class, 'add_user'])->name( 'add_user');
 Route::post('/edit_user',[MainController::class, 'edit_user'])->name( 'edit_user')->middleware('auth');
 
 Route::post('/about',[AdminController::class, 'about'])->name( 'about')->middleware('admin');
 
+Route::post('/add_question',[AdminController::class, 'add_question'])->name( 'add_question')->middleware('admin');
+Route::post('/edit_question',[AdminController::class, 'edit_question'])->name( 'edit_question')->middleware('admin');
+Route::post('/delete_question',[AdminController::class, 'delete_question'])->name( 'delete_question')->middleware('admin');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -13,7 +13,7 @@
                         <div class="dropdown-menu banner-select" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="#">A</a>
                             <a class="dropdown-item" href="#">B</a>
-                            <a class="dropdown-item" href="#">C   </a>
+                            <a class="dropdown-item" href="#">C</a>
                         </div>
                     </div>
                     <input type="text" class="cek" placeholder="Çəki"> <br> <br>
@@ -174,7 +174,7 @@
 </section>
 <!-- pricing-section end -->
 
-<section style="padding: 95px 0;" class="trigger section gutter-horizontal bg-gray gutter-vertical--m gutter-horizontal">
+<section id="stores" style="padding: 95px 0;" class="trigger section gutter-horizontal bg-gray gutter-vertical--m gutter-horizontal">
     <div class="customer-logos slider">
         @foreach($stores as $store)
         <div class="slide-in-right slide"><a href="{{$store->link}}"><img src="{{asset('/images/'.$store->image)}}"  height="65" width="165"></a></div>
@@ -183,7 +183,7 @@
 </section>
 
 <!-- news-section -->
-<section class="news-section bg-color-3">
+<section id="news" class="news-section bg-color-3">
     <div class="auto-container">
         <div class="sec-title centred">
             <p>YENİLİKLƏR</p>
@@ -199,10 +199,8 @@
                                 <img src="{{asset('/images/'.$new->picture)}}" alt="Smart Customs-da bəyan et">
                             </figure>
                             <div class="lower-content">
-                                <h3>  <a title="Smart Customs-da bəyan et"
-                                         href="https://mobex.az/news/smart-customs-da-beyan-et">{{$new->header}}</a></h3>
+                                <h3>  <a href="/new/{{$new->id}}">{{$new->header}}</a></h3>
                                 <ul class="post-info">
-
                                     <li>{{date("d.m.Y", strtotime($new->created_at))}}</li>
                                 </ul>
                                 {!! substr($new->content, 0, 140) !!}...

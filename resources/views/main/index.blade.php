@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Megamart</title>
+    <link rel="stylesheet" href="{{asset('css/toast.css')}}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
@@ -19,12 +20,12 @@
                     </div>
                     <div class="col-lg-10 right">
                         <a href="/about">Haqqımızda</a>
-                        <a href="/">Tariflər</a>
-                        <a href="">Mağazalar</a>
-                        <a href="">Xəbərlər</a>
-                        <a href="">Şərtlər</a>
-                        <a href="">Sual-Cavab</a>
-                        <a class="enter" href="#">Giriş</a>
+                        <a href="#tariff">Tariflər</a>
+                        <a href="#stores">Mağazalar</a>
+                        <a href="#news">Xəbərlər</a>
+                        <a href="/terms">Şərtlər</a>
+                        <a href="/questions">Sual-Cavab</a>
+                        <a class="enter" href="/login">Giriş</a>
                     </div>
                 </div>
             </div>
@@ -214,6 +215,7 @@
 
 
 </body>
+<script src="{{asset('js/toast.js')}}"></script>
 <script src="{{asset('js/jquery.js')}}"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
@@ -223,5 +225,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="{{asset('js/script.js')}}"></script>
+<script src="{{asset('js/cabinet.js')}}"></script>
 
 </html>

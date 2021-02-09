@@ -11,10 +11,10 @@
             <div class="content-box">
                 <div class="title-box">
                     <h3>Hesab yarat</h3>
-                    <a href="https://mobex.az/login">Hesabınıza daxil olun</a>
+                    <a href="/login">Hesabınıza daxil olun</a>
                 </div>
                 <div class="inner">
-                    <form method="POST" action="https://mobex.az/register" accept-charset="UTF-8" class="registration-form" autocomplete="new-password"><input name="_token" type="hidden" value="OMmFKKOZ0KAqjbR60hMcvggoLo9ee7ngoTsG4iMa">
+                    <form accept-charset="UTF-8" class="registration-form" autocomplete="new-password"><input name="_token" type="hidden" value="OMmFKKOZ0KAqjbR60hMcvggoLo9ee7ngoTsG4iMa">
                         <div class="row clearfix">
 
                             <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 form-group ">

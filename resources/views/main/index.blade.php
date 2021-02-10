@@ -15,24 +15,6 @@
     <title>Document</title>
 </head>
 <body>
-        <div class="header-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2 left">
-                        <a href="/"><img src="https://www.megamart.az/img/logo_site_online.png" alt=""></a>
-                    </div>
-                    <div class="col-lg-10 right">
-                        <a href="/about">Haqqımızda</a>
-                        <a href="#tariff">Tariflər</a>
-                        <a href="#stores">Mağazalar</a>
-                        <a href="#news">Xəbərlər</a>
-                        <a href="/terms">Şərtlər</a>
-                        <a href="/questions">Sual-Cavab</a>
-                        <a class="enter" href="/login">Giriş</a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="header">
                 <div class="container">
                     <div class="row">
@@ -62,6 +44,25 @@
                         </div>
                     </div>
                 </div>
+        </div>
+
+        <div class="header-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 left">
+                        <a href="/"><img src="https://www.megamart.az/img/logo_site_online.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-10 right">
+                        <a href="/about">Haqqımızda</a>
+                        <a href="#tariff">Tariflər</a>
+                        <a href="#stores">Mağazalar</a>
+                        <a href="#news">Xəbərlər</a>
+                        <a href="/terms">Şərtlər</a>
+                        <a href="/questions">Sual-Cavab</a>
+                        <a class="enter" href="/login">Giriş</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         @yield('main')

@@ -1,11 +1,9 @@
 $('.edit_user').on('click', function (){
-    var id = $(this).attr('name');
     var formData = new FormData($('#edit_users')[0]);
-    formData.append('id', id);
     if ($('input[name=password]').val() == $('input[name=confirm_password]').val()){
         $.ajax({
             type: "POST",
-            url: "edit_user",
+            url: "/edit_user",
             data: formData,
             cache:false,
             processData:false,
@@ -35,17 +33,14 @@ $('.add_user').on('click', function (){
     formData.append('id', id);
     $.ajax({
         type: "POST",
-        url: "add_user",
+        url: "/add_user",
         data: formData,
         cache:false,
         processData:false,
         contentType:false,
         success:function (response){
             if (response.message == 'success') {
-                toastr.success('Qeydiyyat uğurludur');
-                setTimeout(function (){
-                    window.location.replace('/login');
-                }, 2000)
+               window.location.replace('/login');
             }
         },
         error: function (request, error, response) {

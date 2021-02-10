@@ -159,7 +159,9 @@ Route::get('/add_news', function () {
 
 Route::get('/cabinet', function () {
     $user = Users::find(Auth::id());
-    return view('main.cabinet');
+    return view('main.cabinet',[
+        'user' => $user
+    ]);
 })->middleware('auth');
 
 Route::get('/currency', function () {

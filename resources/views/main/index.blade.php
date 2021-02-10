@@ -41,21 +41,21 @@
                                 <span>iş vaxtı: 09:00 - 19:00</span>
                         </div>
                         <div class="col-lg-6 right">
-                                <a href="">Bloq</a>
-                                <a href="">Zəmanət və qaytarılma</a>
-                                <a href="">Sifariş üsulları</a>
-                                <a href="">Ödəmə üsulları</a>
-                                <a href="">Çatdırılma</a>
-                                <a class="dropdown">
-                                    <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        AZ
-                                        <span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu1">
-                                        <li><a href="#">RU</a></li>
-                                        <li><a href="#">EN</a></li>
-                                    </ul>
+                            <a href="https://www.megamart.az/az/blog">Bloq</a>
+                            <a href="https://www.megamart.az/az/page/4-zemanet-ve-qaytarilma">Zəmanət və qaytarılma</a>
+                            <a href="https://www.megamart.az/az/page/5-sifaris-etme-qaydalari">Sifariş üsulları</a>
+                            <a href="https://www.megamart.az/az/page/12-catdirilma-ve-odeme">Ödəmə üsulları</a>
+                            <a href="https://www.megamart.az/az/page/25-catdirilma">Çatdırılma</a>
+                            <a class="dropdown">
+                                <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    AZ
+                                    <span class="caret"></span>
                                 </a>
+                                <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">RU</a></li>
+                                    <li><a href="#">EN</a></li>
+                                </ul>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -108,19 +108,19 @@
 
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a href="#!" class="text-dark">Reklamın yerləşdirilməsi</a>
+                  <a href="https://www.megamart.az/az/page/15-reklamin-yerleshdirilmesi" class="text-dark">Reklamın yerləşdirilməsi</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-dark">Bizimlə əməkdaşlıq</a>
+                  <a href="https://www.megamart.az/az/page/17-techizatchilarla-ish" class="text-dark">Bizimlə əməkdaşlıq</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-dark">Vakansiyalar</a>
+                  <a href="https://www.megamart.az/az/page/18-vakansiyalar" class="text-dark">Vakansiyalar</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-dark">Megamart.az</a>
+                  <a href="https://www.megamart.az/az/page/19-azmegamartaz" class="text-dark">Megamart.az</a>
                 </li>
                 <li>
-                    <a href="#!" class="text-dark">Bizimlə əlaqə</a>
+                    <a href="https://www.megamart.az/az/page/20-bizimle-elaqe" class="text-dark">Bizimlə əlaqə</a>
                   </li>
               </ul>
             </div>
@@ -132,19 +132,19 @@
 
               <ul class="list-unstyled">
                 <li>
-                  <a href="#!" class="text-dark">Necə alış-veriş etməli</a>
+                  <a href="https://www.megamart.az/az/page/11-nece-alis-veris-etmeli" class="text-dark">Necə alış-veriş etməli</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-dark">Sual-cavab</a>
+                  <a href="https://www.megamart.az/az/page/24-sual-cavab" class="text-dark">Sual-cavab</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-dark">Bonus sistemi</a>
+                  <a href="https://www.megamart.az/az/page/31-bonus-sistemi" class="text-dark">Bonus sistemi</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-dark">Hədiyyə kartları</a>
+                  <a href="https://www.megamart.az/az/page/34-hediyye-kartlari" class="text-dark">Hədiyyə kartları</a>
                 </li>
                 <li>
-                    <a href="#!" class="text-dark">Regionlara çatdırılma</a>
+                    <a href="https://www.megamart.az/az/page/39-olke-uzre-catdirilma" class="text-dark">Regionlara çatdırılma</a>
                   </li>
               </ul>
             </div>
@@ -156,16 +156,16 @@
 
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a href="#!" class="text-dark">Korporativ əməkdaşlıq</a>
+                  <a href="http://corp.megamart.az/" class="text-dark">Korporativ əməkdaşlıq</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-dark">Məxfilik siyasəti</a>
+                  <a href="https://www.megamart.az/az/page/28-mexfilik-siyaseti" class="text-dark">Məxfilik siyasəti</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-dark">Hüquqi məlumat</a>
+                  <a href="https://www.megamart.az/az/page/35-huquqi-melumat" class="text-dark">Hüquqi məlumat</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-dark">İstifadə şərtləri</a>
+                  <a href="https://www.megamart.az/az/page/36-istifade-sertleri" class="text-dark">İstifadə şərtləri</a>
                 </li>
               </ul>
             </div>
@@ -177,7 +177,7 @@
 
               <ul class="list-unstyled">
                 <li>
-                  <a href="#!" class="text-dark"><i class="fas fa-phone"></i>(012) 310-39-10</a>
+                  <a href="" class="text-dark"><i class="fas fa-phone"></i>(012) 310-39-10</a>
                 </li>
                 <li>
                   <a href="#!" class="text-dark">(055) 944-47-02</a>

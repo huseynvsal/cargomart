@@ -75,6 +75,13 @@ Route::get('/question', function () {
     ]);
 })->middleware('admin');
 
+Route::get('/questions', function () {
+    $questions = Questions::all();
+    return view('main.questions',[
+        'questions' => $questions
+    ]);
+});
+
 Route::get('/countries', function () {
     $countries = Countries::all();
     return view('admin.countries',[
@@ -130,6 +137,7 @@ Route::get('/edit_orders/{id}', function ($id) {
 Route::get('/add_news', function () {
     return view('admin.add_news');
 })->middleware('admin');
+
 
 Route::get('/cabinet', function () {
     $user = Users::find(Auth::id());

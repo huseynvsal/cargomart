@@ -2826,4 +2826,117 @@ color: #808080;
     font-weight: 500;
     margin-bottom: 6px;
 }
+/** faq-section **/
+
+.faq-section {
+    position: relative;
+}
+
+.image_block_4 .image-box {
+    position: relative;
+    display: block;
+    margin-right: 30px;
+}
+
+.image_block_4 .image-box .pattern {
+    position: absolute;
+    left: 0px;
+    top: 120px;
+    width: 558px;
+    height: 449px;
+    background-repeat: no-repeat;
+    -webkit-animation: zoom-fade 5s infinite linear;
+    animation: zoom-fade 5s infinite linear;
+}
+
+.image_block_4 .image-box img {
+    position: relative;
+    width: 100%;
+}
+
+.faq-section .content_block_5 .content-box {
+    margin-left: 40px;
+    padding-bottom: 120px;
+    margin-top: 30px;
+}
+
+.accordion-box .block {
+    position: relative;
+    display: block;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px #e3eae9;
+    transition: all 500ms ease;
+}
+
+.accordion-box .block:last-child {
+    margin-bottom: 0px;
+}
+
+.accordion-box .block .acc-content {
+    position: relative;
+    display: none;
+    padding: 0px 35px 33px 30px;
+}
+
+.accordion-box .block .acc-content.current {
+    display: block;
+}
+
+.accordion-box .block .acc-btn .icon-outer {
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    right: 6px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 500ms ease;
+    z-index: 1;
+}
+
+.accordion-box .block .acc-btn .icon-outer:after {
+    position: absolute;
+    content: "\f107";
+    font-size: 24px;
+    color: #00224f;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 400;
+}
+
+.accordion-box .block .acc-btn.active .icon-outer:after {
+    opacity: 0;
+}
+
+.accordion-box .block .acc-btn.active .icon-outer:before {
+    position: relative;
+    font-size: 24px;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 400;
+    margin: 0px;
+    content: "\f106";
+    color: #00224f;
+}
+
+.accordion-box .block .acc-btn {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 28px 80px 24px 30px;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.accordion-box .block .acc-btn h4 {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin: 0px;
+}
 

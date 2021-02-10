@@ -19,7 +19,7 @@
                 <div class="upper-box">
                     <div class="title-box centred">
                         <div class="inner">
-                            <h3>MBX51672</h3>
+                            <h3>{{$user->user_code}}</h3>
                         </div>
                     </div>
                 </div>

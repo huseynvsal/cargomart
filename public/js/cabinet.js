@@ -1,6 +1,10 @@
 $('.edit_user').on('click', function (){
     var formData = new FormData($('#edit_users')[0]);
     if ($('input[name=password]').val() == $('input[name=confirm_password]').val()){
+        $('input[name=password]').css('border-color','#e5e7ec');
+        $('input[name=password]').css('box-shadow','0 0 10px transparent');
+        $('input[name=confirm_password]').css('border-color','#e5e7ec');
+        $('input[name=confirm_password]').css('box-shadow','0 0 10px transparent');
         $.ajax({
             type: "POST",
             url: "/edit_user",

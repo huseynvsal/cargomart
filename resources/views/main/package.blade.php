@@ -36,7 +36,10 @@
                             <a class="current" href="/cabinet"><i class="fas fa-unlock-alt"></i>Hesabım</a>
                         </li>
                         <li>
-                            <a href="https://mobex.az/logout"><i class="fas fa-sign-out-alt"></i>Çıxış</a>
+                            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" ><i class="fas fa-sign-out-alt"></i>Çıxış</a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
                         </li>
                     </ul>
                 </div>
@@ -54,27 +57,27 @@
                                         <li class="active-btn">
                                             <a href="/package">
                                                 Öncədən bəyan et
-                                                                                            </a>
+                                            </a>
                                         </li>
                                         <li>
                                             <a href="/package">
                                                 Xarİcİ anbarda
-                                                                                            </a>
+                                            </a>
                                         </li>
                                         <li>
                                             <a href="/package">
                                                 GÖndƏrİlİb
-                                                                                            </a>
+                                            </a>
                                         </li>
                                         <li>
                                             <a href="/package">
                                                 Bakıda
-                                                                                            </a>
+                                            </a>
                                         </li>
                                         <li>
                                             <a href="/package">
                                                 Keçmİş sİfarİşlər
-                                                                                            </a>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -82,7 +85,7 @@
                                     <div class="tab active-tab" id="tab-1">
                                         <div class="inner-box">
                                             <div class="accordion-box">
-                                                                                                                                                                                                                                                    
+
                                                                                                                                                                     <div class="alert alert-warning" role="alert">Heç bir bağlamanız yoxdur.</div>
                                                                                                                                                     </div>
                                         </div>

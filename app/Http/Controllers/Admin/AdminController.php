@@ -17,11 +17,13 @@ use App\Http\Requests\Question\EditQuestionRequest;
 use App\Http\Requests\Question\QuestionRequest;
 use App\Http\Requests\Store\EditStoreRequest;
 use App\Http\Requests\Store\StoreRequest;
+use App\Http\Requests\Terms\TermsRequest;
 use App\News\News;
 use App\Orders\Orders;
 use App\Prices\Prices;
 use App\Questions\Questions;
 use App\Stores\Stores;
+use App\Terms\Terms;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -36,6 +38,22 @@ class AdminController extends Controller
         }
         $about->content = $request->mycontent;
         $about->save();
+        return response()->json([
+            'status' => true,
+            'message' => 'success'
+        ]);
+    }
+
+    public function terms(TermsRequest $request)
+    {
+        if (Terms::find(1)) {
+            $terms = Terms::find(1);
+        }
+        else {
+            $terms = new Terms();
+        }
+        $terms->content = $request->mycontent;
+        $terms->save();
         return response()->json([
             'status' => true,
             'message' => 'success'

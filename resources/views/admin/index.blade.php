@@ -172,6 +172,12 @@
                             <span class="hide-menu">Suallar cədvəli</span>
                         </a>
                     </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/add_terms" aria-expanded="false">
+                            <i class="mdi mdi-border-none"></i>
+                            <span class="hide-menu">Şərtlər</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <!-- End Sidebar navigation -->
@@ -220,6 +226,7 @@
 <script src="{{asset('/js/orders.js')}}"></script>
 <script src="{{asset('/js/about.js')}}"></script>
 <script src="{{asset('/js/question.js')}}"></script>
+<script src="{{asset('/js/terms.js')}}"></script>
 <script>
     var csrf_token = "{{ csrf_token() }}";
 </script>

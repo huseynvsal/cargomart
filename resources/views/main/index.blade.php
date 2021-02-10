@@ -177,7 +177,7 @@
 
               <ul class="list-unstyled">
                 <li>
-                  <a href="" class="text-dark"><i class="fas fa-phone"></i>(012) 310-39-10</a>
+                  <a href="#!" class="text-dark"><i class="fas fa-phone"></i>(012) 310-39-10</a>
                 </li>
                 <li>
                   <a href="#!" class="text-dark">(055) 944-47-02</a>

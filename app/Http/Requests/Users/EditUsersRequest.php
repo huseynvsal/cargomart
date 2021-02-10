@@ -26,12 +26,10 @@ class EditUsersRequest extends FormRequest
         return [
             'name' => ['required','string','min:1','max:150'],
             'surname' => ['required','string','min:1','max:150'],
-            'email' => ['required','string','min:1','max:300'],
-            'password' => ['string'],
+            'password' => ['sometimes','nullable','min:8','string'],
             'series' => ['required','string','max:6'],
             'number' => ['required','string','min:8','max:8'],
             'fin' => ['required','string','min:7','max:7'],
-            'phone' => ['required','string','min:10','max:10'],
             'city' => ['required','string'],
             'address' => ['required','string','min:1','max:300'],
         ];
@@ -50,11 +48,6 @@ class EditUsersRequest extends FormRequest
             'surname.min'  => 'Soy ad çox qısadır! (1-150)',
             'surname.max'  => 'Soy ad çox uzundur! (1-150)',
 
-            'email.required'  => 'Email daxil edilməyib!',
-            'email.string'  => 'Email yanlışdır!',
-            'email.min'  => 'Email çox qısadır! (1-300)',
-            'email.max'  => 'Email çox uzundur! (1-300)',
-
             'password.string'  => 'Şifrə yanlışdır!',
             'password.min'  => 'Şifrə çox qısadır! (Min: 8)',
 
@@ -70,11 +63,6 @@ class EditUsersRequest extends FormRequest
             'fin.string'  => 'Fin kod yanlışdır!',
             'fin.min'  => 'Fin kod 7 elementdən ibarət olmalıdır!',
             'fin.max'  => 'Fin kod 7 elementdən ibarət olmalıdır!',
-
-            'phone.required'  => 'Telefon nömrəsi daxil edilməyib!',
-            'phone.string'  => 'Telefon nömrəsi yanlışdır!',
-            'phone.min'  => 'Telefon nömrəsi 10 elementdən ibarət olmalıdır!',
-            'phone.max'  => 'Telefon nömrəsi 10 elementdən ibarət olmalıdır!',
 
             'city.required'  => 'Şəhər daxil edilməyib!',
             'city.string'  => 'Şəhər yanlışdır!',

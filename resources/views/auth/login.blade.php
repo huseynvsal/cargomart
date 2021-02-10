@@ -18,6 +18,11 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group ">
                                     <label>Email</label>
                                     <input class="form__field @error('email') is-invalid @enderror" id="email" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                    @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>Məlumatlar yanlışdır</strong>
+                                    </span>
+                                    @enderror
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group ">
                                     <label>Şifrə</label>

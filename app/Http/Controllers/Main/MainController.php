@@ -15,17 +15,15 @@ class MainController extends Controller
 {
     public function edit_user(EditUsersRequest $request)
     {
-        $edit_users = Users::find($request->id);
+        $edit_users = Users::find(Auth::id());
         $edit_users->name = $request->name;
         $edit_users->surname = $request->surname;
-        $edit_users->email = $request->email;
         $edit_users->series = $request->series;
         $edit_users->fin = $request->fin;
         $edit_users->number = $request->number;
-        $edit_users->phone = $request->phone;
         $edit_users->city = $request->city;
         $edit_users->address = $request->address;
-        if ($request->password){
+        if ($request->password != ''){
             $edit_users->password = Hash::make($request->password);
         }
         $edit_users->save();

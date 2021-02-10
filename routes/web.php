@@ -99,12 +99,6 @@ Route::get('/questions', function () {
         'questions' => $questions
     ]);
 });
-Route::get('/own_cabinet', function () {
-    $questions = Questions::all();
-    return view('main.own_cabinet',[
-        'questions' => $questions
-    ]);
-});
 
 Route::get('/countries', function () {
     $countries = Countries::all();

@@ -156,6 +156,10 @@ Route::get('/add_news', function () {
     return view('admin.add_news');
 })->middleware('admin');
 
+Route::get('/order', function () {
+    return view('main.order');
+})->middleware('auth');
+
 Route::get('/package', function () {
     return view('main.package');
 })->middleware('auth');

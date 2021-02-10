@@ -3084,8 +3084,6 @@ select:focus{
     color: #061a3a;
 }
 
-.doctor-details-content .tabs-box .tabs-content .inner-box .text .treatments-list li a:hover {
-}
 
 .doctor-details-content .tabs-box .tabs-content .inner-box .text .treatments-list {
     margin-bottom: 35px;
@@ -3697,8 +3695,6 @@ select:focus{
     color: #727272;
 }
 
-.doctors-dashboard .right-panel .appointment-list .single-item .inner .info-list li a:hover {
-}
 
 .doctors-dashboard .right-panel .appointment-list .single-item .inner .info-list li i {
     font-size: 13px;
@@ -3758,8 +3754,6 @@ select:focus{
     transition: all 500ms ease;
 }
 
-.my-patients .title-box .search-form input:focus {
-}
 
 .my-patients .title-box .search-form button {
     position: absolute;
@@ -3772,9 +3766,6 @@ select:focus{
     transition: all 500ms ease;
 }
 
-.my-patients .title-box .search-form input:focus + button,
-.my-patients .title-box .search-form button:hover {
-}
 
 .my-patients .title-box h3 {
     margin-bottom: 0px;
@@ -3884,9 +3875,7 @@ select:focus{
     transition: all 500ms ease;
 }
 
-.add-listing .single-box .inner-box .form-group input:focus,
-.add-listing .single-box .inner-box .form-group textarea:focus {
-}
+
 
 .add-listing .single-box .inner-box .form-group textarea {
     height: 120px;
@@ -3966,8 +3955,7 @@ select:focus{
     transition: all 500ms ease;
 }
 
-.schedule-timing .title-box .search-form input:focus {
-}
+
 
 .schedule-timing .title-box .search-form button {
     position: absolute;
@@ -3980,9 +3968,7 @@ select:focus{
     transition: all 500ms ease;
 }
 
-.schedule-timing .title-box .search-form input:focus + button,
-.schedule-timing .title-box .search-form button:hover {
-}
+
 
 .schedule-timing .title-box .right-column span {
     position: relative;
@@ -4453,9 +4439,6 @@ select:focus{
     font-weight: 500;
 }
 
-.profile-box .profile-info .list li a.current,
-.profile-box .profile-info .list li a:hover {
-}
 
 .profile-box .profile-info .list li a i {
     font-size: 15px;
@@ -4464,9 +4447,6 @@ select:focus{
     transition: all 500ms ease;
 }
 
-.profile-box .profile-info .list li a.current i,
-.profile-box .profile-info .list li a:hover i {
-}
 
 .profile-box .profile-info .list li span {
     position: absolute;
@@ -4900,9 +4880,7 @@ select:focus{
     resize: none;
 }
 
-.submit-review .review-box .content-inner .form-inner .form-group input:focus,
-.submit-review .review-box .content-inner .form-inner .form-group textarea:focus {
-}
+
 
 .submit-review .review-box .content-inner .form-inner .form-group button {
     display: block;
@@ -5073,9 +5051,6 @@ select:focus{
     resize: none;
 }
 
-.appointment-section .information-form .form-group input:focus,
-.appointment-section .information-form .form-group textarea:focus {
-}
 
 .appointment-section .information-form .form-group .nice-select {
     width: 100%;
@@ -5121,8 +5096,7 @@ select:focus{
     transition: all 500ms ease;
 }
 
-.appointment-section .payment-information .form-group input:focus {
-}
+
 
 .appointment-section .payment-information .form-group .card-list li {
     position: relative;
@@ -5345,8 +5319,7 @@ select:focus{
     color: #061a3a;
 }
 
-.clinic-details-content .clinic-block-one .inner-box .lower-box .info li a:hover {
-}
+
 
 .clinic-details-content .clinic-block-one .inner-box .lower-box .view-map {
     position: relative;
@@ -5444,8 +5417,7 @@ select:focus{
     border-right: none;
 }
 
-.clinic-details-content .tabs-box .tab-btn-box .tab-btns li.active-btn {
-}
+
 
 .clinic-details-content .tabs-box .tabs-content h3 {
     position: relative;
@@ -5701,3 +5673,8 @@ select:focus{
 	background: #ffd600;
 }
 
+.inputforcheck{
+    width: 25px;
+    height: 20px;
+    margin-right: 15px;
+}

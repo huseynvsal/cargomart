@@ -157,7 +157,12 @@ Route::get('/add_news', function () {
 })->middleware('admin');
 
 Route::get('/package', function () {
-    return view('main.package');
+    $order = Orders::query()
+        ->where('user_id',Auth::id())
+        ->get();
+    return view('main.package',[
+        'order' => $order
+    ]);
 })->middleware('auth');
 
 Route::get('/cabinet', function () {

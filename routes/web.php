@@ -8,6 +8,7 @@ use App\Users\Users;
 use App\Orders\Orders;
 use App\About\About;
 use App\Questions\Questions;
+use App\Terms\Terms;
 use App\Http\Controllers\Admin\AdminController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Main\MainController;
@@ -45,8 +46,25 @@ Route::get('/about', function () {
     ]);
 });
 
+Route::get('/terms', function () {
+    $terms = Terms::find(1);
+    return view('main.terms',[
+        'terms' => $terms
+    ]);
+});
+
 Route::get('/add_about', function () {
-    return view('admin.about');
+    $about = About::find(1);
+    return view('admin.about',[
+        'about' => $about
+    ]);
+})->middleware('admin');
+
+Route::get('/add_terms', function () {
+    $terms = Terms::find(1);
+    return view('admin.terms',[
+        'terms' => $terms
+    ]);
 })->middleware('admin');
 
 Route::get('/new/{id}', function ($id) {
@@ -165,6 +183,8 @@ Route::post('/add_user',[MainController::class, 'add_user'])->name( 'add_user');
 Route::post('/edit_user',[MainController::class, 'edit_user'])->name( 'edit_user')->middleware('auth');
 
 Route::post('/about',[AdminController::class, 'about'])->name( 'about')->middleware('admin');
+
+Route::post('/terms',[AdminController::class, 'terms'])->name( 'terms')->middleware('admin');
 
 Route::post('/add_question',[AdminController::class, 'add_question'])->name( 'add_question')->middleware('admin');
 Route::post('/edit_question',[AdminController::class, 'edit_question'])->name( 'edit_question')->middleware('admin');

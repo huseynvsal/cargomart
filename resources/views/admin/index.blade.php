@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+
     <!-- Favicon icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="{{asset('image/png')}}" sizes="16x16" href="{{asset('assets/images/favicon.png')}}">
@@ -213,11 +214,11 @@
 <script src="{{asset('dist/js/custom.min.js')}}"></script>
 <!--This page JavaScript -->
 <!--chartis chart-->
-<script src="{{asset('js/toast.js')}}"></script>
 <script src="{{asset('assets/libs/chartist/dist/chartist.min.js')}}"></script>
 <script src="{{asset('assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js')}}"></script>
 <script src="{{asset('dist/js/pages/dashboards/dashboard1.js')}}"></script>
 <script src="{{asset('tinymce/tinymce.min.js')}}" referrerpolicy="origin"></script>
+<script src="{{asset('js/toast.js')}}" referrerpolicy="origin"></script>
 <script src="{{asset('/js/price.js')}}"></script>
 <script src="{{asset('/js/word.js')}}"></script>
 <script src="{{asset('/js/country.js')}}"></script>

@@ -7,8 +7,8 @@ function page() {
 
 $('.add_question').on('click', function(){
     var formData = new FormData($('#add_questions')[0]);
-    var question = $('input[name=question]').val().trim();
-    var answer = $('input[name=answer]').val().trim();
+    var question = $('textarea[name=question]').val().trim();
+    var answer = $('textarea[name=answer]').val().trim();
     $.ajax({
         type: "POST",
         url: "add_question",
@@ -74,15 +74,15 @@ $(document).on('click','.edit_question', function(){
     $('#edit_question').attr('name',id);
     var question = $('#'+id+'').find('td:eq(2)').text().trim();
     var answer = $('#'+id+'').find('td:eq(3)').text().trim();
-    $('#edit_question').find('input[name=new_question]').val(question);
-    $('#edit_question').find('input[name=new_answer]').val(answer);
+    $('#edit_question').find('textarea[name=new_question]').val(question);
+    $('#edit_question').find('textarea[name=new_answer]').val(answer);
 });
 $('.edit_questions').on('click', function (){
     var id = $(this).parents('#edit_question').attr('name');
     var formData = new FormData($('#edit_questions')[0]);
     formData.append('id', id);
-    var new_question = $('input[name=new_question]').val().trim();
-    var new_answer = $('input[name=new_answer]').val().trim();
+    var new_question = $('textarea[name=new_question]').val().trim();
+    var new_answer = $('textarea[name=new_answer]').val().trim();
     $.ajax({
         type: "POST",
         url: "edit_question",
@@ -95,8 +95,8 @@ $('.edit_questions').on('click', function (){
                 toastr.success('Qiymət yeniləndi');
                 $('#'+id+'').find('td:eq(2)').text(''+new_question+'');
                 $('#'+id+'').find('td:eq(3)').text(''+new_answer+'');
-                $('input[name=new_question]').val('');
-                $('input[name=new_answer]').val('');
+                $('textarea[name=new_question]').val('');
+                $('textarea[name=new_answer]').val('');
                 $('#edit_question').modal('hide');
             }
         },

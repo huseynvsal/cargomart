@@ -13,8 +13,8 @@
                 <div class="modal-body">
                     <form id="add_questions">
                         @csrf
-                        <input type="text" name="question" placeholder="Sual" class="form-control"><br>
-                        <input type="text" name="answer" placeholder="Cavab" class="form-control"><br>
+                        <textarea name="question" placeholder="Sual" class="form-control"></textarea><br>
+                        <textarea name="answer" placeholder="Cavab" class="form-control"></textarea><br>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -37,8 +37,8 @@
                 <div class="modal-body">
                     <form id="edit_questions">
                         @csrf
-                        <input type="text" name="new_question" placeholder="Sual" class="form-control"><br>
-                        <input type="text" name="new_answer" placeholder="Cavab" class="form-control"><br>
+                        <textarea name="new_question" placeholder="Sual" class="form-control"></textarea><br>
+                        <textarea name="new_answer" placeholder="Cavab" class="form-control"></textarea><br>
                     </form>
                 </div>
                 <div class="modal-footer">

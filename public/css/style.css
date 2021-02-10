@@ -938,9 +938,6 @@ h6 {
 }
 
 
-
-
-
 .page-title-two {
     position: relative;
     text-align: center;
@@ -1539,7 +1536,7 @@ h6 {
 }
 
 .declare_box .tab-btns li a {
-    color: #fff;
+    color: black;
     position: relative;
     float: left;
     width: 100%;
@@ -1623,8 +1620,8 @@ h6 {
 }
 
 .alert {
-    color: #fff !important;
-    background: #453f85;
+    color: black !important;
+    background: #ffd600;
     padding: 25px;
 }
 
@@ -5294,3 +5291,413 @@ select:focus{
     padding: 10px 10px;
     transition: all 500ms ease;
 }
+.clinic-details {
+    position: relative;
+    padding: 80px 0px 120px 0px;
+}
+
+.clinic-details-content {
+    position: relative;
+    margin-right: 10px;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .image-box {
+    width: 190px;
+    height: 220px;
+}
+
+.clinic-details-content .clinic-block-one .inner-box {
+    padding: 34px 40px 37px 260px;
+    box-shadow: none;
+    margin-bottom: 40px;
+}
+
+.clinic-details-content .clinic-block-one .inner-box h2 {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .lower-box .info {
+    position: relative;
+    float: left;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .lower-box .info li {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    padding-left: 20px;
+    margin-bottom: 3px;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .lower-box .info li:last-child {
+    margin-bottom: 0px;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .lower-box .info li i {
+    position: absolute;
+    left: 0px;
+    top: 6px;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .lower-box .info li a {
+    color: #061a3a;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .lower-box .info li a:hover {
+}
+
+.clinic-details-content .clinic-block-one .inner-box .lower-box .view-map {
+    position: relative;
+    float: left;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .lower-box .view-map a {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .lower-box .view-map:before {
+    position: absolute;
+    content: '';
+    background: #e5e5e5;
+    width: 1px;
+    height: 18px;
+    left: 0px;
+    top: 4px;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .content-box .designation {
+    margin-bottom: 2px;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .content-box .rating-box {
+    margin-bottom: 12px;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .content-box .text {
+    margin-bottom: 14px;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .content-box .share-box {
+    position: absolute;
+    top: 40px;
+    right: 90px;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .content-box .share-box a.share-btn {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #eaf8f6;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.clinic-details-content .clinic-block-one .inner-box .content-box .share-box a.share-btn:hover {
+    color: #fff;
+}
+
+.clinic-details-content .tabs-box {
+    position: relative;
+    display: block;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.clinic-details-content .tabs-box .tabs-content {
+    position: relative;
+    padding: 43px 40px 50px 40px;
+}
+
+.clinic-details-content .tabs-box .tab-btn-box {
+    position: relative;
+    display: block;
+}
+
+.clinic-details-content .tabs-box .tab-btn-box .tab-btns li {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 15px 15px 15px 15px;
+    cursor: pointer;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 500ms ease;
+}
+
+.clinic-details-content .tabs-box .tab-btn-box .tab-btns li:last-child {
+    border-right: none;
+}
+
+.clinic-details-content .tabs-box .tab-btn-box .tab-btns li.active-btn {
+}
+
+.clinic-details-content .tabs-box .tabs-content h3 {
+    position: relative;
+    display: block;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.clinic-details-content .tabs-box .tabs-content .inner-box .text p {
+    margin-bottom: 35px;
+}
+
+.clinic-details-content .tabs-box .tabs-content .inner-box .text .list li {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 50%;
+    font-size: 16px;
+    color: #061a3a;
+    font-weight: 500;
+    margin-bottom: 6px;
+    padding-left: 23px;
+}
+
+.clinic-details-content .tabs-box .tabs-content .inner-box .text .list li:before {
+    position: absolute;
+    content: '';
+    border: 3px solid #dad9e7;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: 0px;
+    top: 7px;
+}
+
+.clinic-details-content .tabs-box .tabs-content .inner-box .text .list {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.clinic-details-content .tabs-box .accordion-box .title-box {
+    position: relative;
+    background: #ebf7f6;
+    padding: 12px 75px 12px 30px;
+}
+
+.clinic-details-content .tabs-box .accordion-box h6 {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    line-height: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.clinic-details-content .tabs-box .accordion-box h6 span {
+    float: right;
+}
+
+.clinic-details-content .tabs-box .accordion-box .block .acc-btn h6 {
+    font-weight: 500;
+}
+
+.clinic-details-content .tabs-box .accordion-box .accordion-inner {
+    position: relative;
+    border: 1px solid #e5e5e5;
+    border-top: none;
+}
+
+.clinic-details-content .tabs-box .accordion-box .block {
+    box-shadow: none;
+    margin: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.clinic-details-content .tabs-box .accordion-box .block:last-child {
+    border-bottom: none;
+}
+
+.clinic-details-content .tabs-box .accordion-box .block .acc-btn {
+    padding: 13px 80px 11px 30px;
+    border-bottom: 1px solid transparent
+}
+
+.clinic-details-content .tabs-box .accordion-box .block .acc-btn.active {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.clinic-details-content .tabs-box .accordion-box .block .acc-content {
+    padding: 22px 30px 30px 30px;
+}
+
+.clinic-details-content .tabs-box .accordion-box .block .acc-content p {
+    margin: 0px;
+}
+
+.clinic-details-content .tabs-box .accordion-box .block .acc-btn .icon-outer {
+    border-left: 1px solid #e5e5e5;
+}
+
+.clinic-details-content .tabs-box .accordion-box .block .acc-btn .icon-outer:after {
+    content: "\f067";
+    font-size: 20px;
+}
+
+.clinic-details-content .tabs-box .accordion-box .block .acc-btn.active .icon-outer:before {
+    content: "\f068";
+    font-size: 20px;
+}
+
+.clinic-details-content .tabs-box .accordion-box .block .acc-btn .icon-outer {
+    right: 0px;
+    width: 50px;
+}
+
+.clinic-details-content .tabs-box .award-box .list li {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color: #061a3a;
+    font-weight: 500;
+    margin-bottom: 6px;
+    padding-left: 23px;
+}
+
+.clinic-details-content .tabs-box .award-box .list li span {
+    font-weight: 400;
+    color: #808080;
+}
+
+.clinic-details-content .tabs-box .award-box .list li:before {
+    position: absolute;
+    content: '';
+    border: 3px solid #dad9e7;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: 0px;
+    top: 7px;
+}
+
+.clinic-details-content .tabs-box .accordion-box {
+    margin-bottom: 44px;
+}
+
+.clinic-details-content .tabs-box .accordion-box h3 {
+    margin-bottom: 24px !important;
+}
+
+.clinic-details-content .tabs-box .award-box {
+    margin-bottom: 35px;
+}
+
+.clinic-details-content .tabs-box .image-gallery .image-list {
+    position: relative;
+    margin: 0px -5px;
+}
+
+.clinic-details-content .tabs-box .image-gallery .image-list li {
+    position: relative;
+    float: left;
+    width: 33.333%;
+}
+
+.clinic-details-content .tabs-box .image-gallery .image-list li .image {
+    position: relative;
+    margin: 0px 5px;
+    border-radius: 10px;
+}
+
+.clinic-details-content .tabs-box .image-gallery .image-list li .image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.clinic-details-content .tabs-box .tabs-content .inner-box .image-gallery h3 {
+    margin-bottom: 23px !important;
+}
+
+.clinic-details-content .tabs-box .onboard-doctors {
+    position: relative;
+}
+
+.clinic-details-content .tabs-box .team-block-one .btn-box {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.clinic-details-content .tabs-box .team-block-one .btn-box .theme-btn-one {
+    padding: 9px 26px;
+}
+
+.clinic-details-content .tabs-box .location-box .map-inner {
+    position: relative;
+    border-radius: 10px;
+    border: 5px solid #dad9e7;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.clinic-details-content .tabs-box .location-box .map-inner #contact-google-map {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.clinic-details-content .tabs-box .location-box h4 {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.clinic-details-content .tabs-box .location-box .location-info li {
+    position: relative;
+    display: block;
+    padding-left: 20px;
+    margin-bottom: 6px;
+}
+
+.clinic-details-content .tabs-box .location-box .location-info li:last-child {
+    margin-bottom: 0px;
+}
+
+.clinic-details-content .tabs-box .location-box .location-info li a {
+    color: #061a3a;
+}
+
+
+.clinic-details-content .tabs-box .location-box .location-info li i {
+    position: absolute;
+    left: 0px;
+    top: 7px;
+}
+
+
+
+
+
+.clinic-details-content .clinic-block-one .inner-box .lower-box .view-map a {
+	color: #01b4d9;
+}
+
+
+.clinic-details-content .tabs-box .tab-btn-box {
+	background: #ffd600;
+}
+

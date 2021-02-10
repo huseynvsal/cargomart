@@ -30,13 +30,13 @@
                             <a href="beyan.html"><i class="fas fa-plus"></i>Bəyan et</a>
                         </li>
                         <li>
-                            <a href="package.html"><i class="fas fa-calendar-alt"></i>Bağlamalar</a>
+                            <a href="/package"><i class="fas fa-calendar-alt"></i>Bağlamalar</a>
                         </li>
                         <li>
-                            <a class="current" href="own_cabinet.html"><i class="fas fa-unlock-alt"></i>Hesabım</a>
+                            <a class="current" href="/cabinet"><i class="fas fa-unlock-alt"></i>Hesabım</a>
                         </li>
                         <li>
-                            <a href="https://mobex.az/logout"><i class="fas fa-sign-out-alt"></i>Çıxış</a>
+                            <a href=""><i class="fas fa-sign-out-alt"></i>Çıxış</a>
                         </li>
                     </ul>
                 </div>

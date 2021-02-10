@@ -156,6 +156,9 @@ Route::get('/add_news', function () {
     return view('admin.add_news');
 })->middleware('admin');
 
+Route::get('/package', function () {
+    return view('main.package');
+})->middleware('auth');
 
 Route::get('/cabinet', function () {
     $user = Users::find(Auth::id());

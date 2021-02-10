@@ -89,7 +89,7 @@
                                 </div>                            </div>
 
                             <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
-                                <button type="submit" class="theme-btn-one">Qeydiyyat<i class="icon-Arrow-Right"></i>
+                                <button type="submit" style="cursor:pointer" class="theme-btn-one">Qeydiyyat<i class="icon-Arrow-Right"></i>
                                 </button>
                             </div>
                         </div>

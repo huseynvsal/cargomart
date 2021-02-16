@@ -32,9 +32,7 @@ $('.edit_user').on('click', function (){
 });
 
 $('.add_user').on('click', function (){
-    var id = $(this).attr('name');
     var formData = new FormData($('#add_users')[0]);
-    formData.append('id', id);
     $.ajax({
         type: "POST",
         url: "/add_user",

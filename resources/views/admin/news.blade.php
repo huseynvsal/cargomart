@@ -39,14 +39,6 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                            <div class="container col-6">
-                                {{--                                <div class="input-group mb-3">--}}
-                                {{--                                    <input type="text" class="form-control" name="axtar" placeholder="Məsulun adı">--}}
-                                {{--                                    <div class="input-group-append">--}}
-                                {{--                                        <button style="background-color: #233242; color: white" class="btn axtar" type="button">Axtar</button>--}}
-                                {{--                                    </div>--}}
-                                {{--                                </div>--}}
-                            </div>
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
